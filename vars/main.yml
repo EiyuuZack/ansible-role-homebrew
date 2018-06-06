@@ -1,0 +1,12 @@
+---
+homebrew_installed_packages:
+  - git
+  - wget
+  - imagemagick
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-versions
+homebrew_cask_apps:
+  - skype
+homebrew_use_brewfile: false
