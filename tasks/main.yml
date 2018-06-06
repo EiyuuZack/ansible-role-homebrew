@@ -94,6 +94,7 @@
     - opt
     - sbin
     - share
+    - share/man
     - share/zsh
     - share/zsh/site-functions
     - var
