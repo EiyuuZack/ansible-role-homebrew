@@ -8,6 +8,8 @@ homebrew_taps:
   - homebrew/cask
   - homebrew/cask-versions
 homebrew_cask_apps:
+  - provisionql
+  - quicklookapk
   - skype
   - android-studio
 homebrew_use_brewfile: false
