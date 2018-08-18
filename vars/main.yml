@@ -14,5 +14,6 @@ homebrew_cask_apps:
   - quicklookapk
   - skype
   - android-studio
+  - android-file-transfer
   - docker
 homebrew_use_brewfile: false
