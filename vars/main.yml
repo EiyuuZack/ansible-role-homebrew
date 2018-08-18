@@ -3,8 +3,6 @@ homebrew_installed_packages:
   - git
   - wget
   - imagemagick
-  - ansible
-  - awscli
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
