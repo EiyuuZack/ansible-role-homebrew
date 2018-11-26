@@ -15,3 +15,5 @@ homebrew_cask_apps:
   - android-file-transfer
   - docker
 homebrew_use_brewfile: false
+homebrew_user: "{{ ansible_user }}"
+homebrew_group: "admin"
