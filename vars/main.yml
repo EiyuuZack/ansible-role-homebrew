@@ -4,6 +4,7 @@ homebrew_installed_packages:
   - git
   - wget
   - imagemagick
+  - tmux
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
