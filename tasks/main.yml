@@ -82,22 +82,7 @@
     owner: "{{ homebrew_user }}"
     group: "{{ homebrew_group }}"
   become: yes
-  loop:
-    - Cellar
-    - Homebrew
-    - Frameworks
-    - Caskroom
-    - bin
-    - etc
-    - include
-    - lib
-    - opt
-    - sbin
-    - share
-    - share/man
-    - share/zsh
-    - share/zsh/site-functions
-    - var
+  loop: "{{ homebrew_folders_base + homebrew_folders_additional }}"
 
 - block:
   - name: Force update brew after installation.
@@ -112,7 +97,10 @@
 
   # Tap.
   - name: Ensure configured taps are tapped.
-    homebrew_tap: "tap={{ item }} state=present"
+    homebrew_tap:
+      tap: '{{ item.name | default(item) }}'
+      url: '{{ item.url | default(omit) }}'
+      state: present
     loop: "{{ homebrew_taps }}"
 
   # Cask.

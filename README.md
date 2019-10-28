@@ -44,7 +44,8 @@ Packages you would like to make sure are _uninstalled_.
 Whether to upgrade homebrew and all packages installed by homebrew. If you prefer to manually update packages via `brew` commands, leave this set to `no`.
 
     homebrew_taps:
-      - homebrew/cask
+      - homebrew/core
+      - { name: my_company/internal_tap, url: 'https://example.com/path/to/tap.git' }
 
 Taps you would like to make sure Homebrew has tapped.
 
@@ -88,6 +89,10 @@ The user that you would like to install Homebrew as.
     homebrew_group: "{{ ansible_user_gid }}"
 
 The group that you would like to use while installing Homebrew.
+
+    homebrew_folders_additional: []
+
+Any additional folders inside `homebrew_prefix` for which to ensure homebrew user/group ownership.
 
 ## Dependencies
 

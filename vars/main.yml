@@ -20,3 +20,18 @@ homebrew_cask_accept_external_apps: true
 homebrew_use_brewfile: false
 homebrew_user: "{{ ansible_user }}"
 homebrew_group: "admin"
+homebrew_folders_base:
+  - Cellar
+  - Homebrew
+  - Frameworks
+  - Caskroom
+  - bin
+  - etc
+  - include
+  - lib
+  - opt
+  - sbin
+  - share
+  - share/zsh
+  - share/zsh/site-functions
+  - var
